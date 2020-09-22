@@ -38,6 +38,7 @@ export function getGetSignedUrl( key: string ): string{
  *    key: string - the filename to be retreived from s3 bucket
  * @Returns:
  *    a url as a string
+ *  More comments here
  */
 export function getPutSignedUrl( key: string ){
 
