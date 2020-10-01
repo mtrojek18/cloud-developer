@@ -37,13 +37,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     const deleteImage = [imagePath];
     //4. deletes any files on the server on finish of the response
     res.sendFile(imagePath, () => deleteLocalFiles(deleteImage));    
-
-    // await filterImageFromURL(image_url).then((url) => {
-    //   const deleteImage = [url];
-    //   res.sendFile(url, () => deleteLocalFiles(deleteImage));
-    // }).catch(err => {
-    //   return res.status(400).send('image_url is required');
-    // });   
     
   } );
  
