@@ -1,6 +1,6 @@
 'no strict'
 
-const AWS = require('aws-sdk')
+const AWS = require('aws-sdk');
 var _ = require('lodash')
 const ec2 = new AWS.EC2({region: 'us-east-1'})
 
